@@ -1,0 +1,106 @@
+EC2---> Elastic Compute Cloud
+
+Server Engg----> Application Engg 
+
+
+EC2---> Compute
+
+Secure & Resizable Compute Capacity to support virtually any workload 
+
+Virtual server/Virtual MACHINE/ Instance
+
+Scalability
+Global infrastructure on deamd 
+SLA ( Cloud Service Level Agreement) Commitment 99.99% 
+
+
+EC2 types 
+Price based
+Usage Based 
+
+Pay-As-U-GO service 
+Shared service 
+Price Based:
+1. On Demand
+2. Reserved 
+3. Dedicated 
+4. On Spot - 90% lesser cost 
+
+Usage based 
+1. R: RAM-----> Memory Optimize
+2. C: CPU-----> Compute Optimize
+3. M: Medium-----> General Purpose
+4. I: Database
+5. G:Graphics
+6. T: Burstable Unlimited 
+https://aws.amazon.com/ec2/instance-types/
+------------------------------------------
+
+EBS-Elastic Block Storage 
+http://www.greenstechnologys.com/
+
+
+For windows keypaur should be PEM
+For Linux key pair Should be PPK
+----------------------------------------------------------
+
+Application Hosting
+Middleware---> server between O/S and Software 
+Deployment
+Server ----> Web server--> Static 
+                      App server ---> Dynamic 
+
+Deployment ---> 
+Third party app ---> Winscp 
+--------------------------------------------------------
+Static website Hosting 
+
+need to install Web Server in instance
+
+Apache free server ----> Linux 
+IIS microsoft--> Windows 
+
+Default user(read acess), root user(Read Write & Execute), Super user(Read & Write)
+
+from default user to root user---> sudo su
+
+yum--> Yellowdog updater & Modifier 
+application install, remove, update & modify 
+
+download free web templates 
+
+-------------------------------------------------------
+Windows Instance
+Step1---> open Remote desktop --> use IPv4 instance Ip address
+Step 2--> click on connect in instance console----> click RDP--> get username & Password 
+Step3--> search for server in Remote Instance---> Server Manager---> add roles and features --> Next(3)---> Web server (IIS)--> Next(4)--> Install 
+Step 4--> open Directory C:\inetpub\wwwroot-> delete existing file--> upload youer web template
+--------------------------------------
+Linux Instance
+
+Putty download 
+Step1 --> Open Putty--> Ip Address--> SSH+ ----> Auth 
+Step2- sudo su
+step-3 to install apache--> yum install httpd -y
+Step 4- systemctl start httpd
+step5- open Winscp---> give ip address-- username password  open directory /var/www/html/
+step 6---> chmod 777  /var/www/html/ in putty
+
+
+
+read -4
+write-2
+execute-1
+--------------------
+7
+--------------------
+keypair
+instance
+putty download, web template doenload, winscp download'
+install server i instance
+deployment
+
+
+
+
+ 
